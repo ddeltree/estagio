@@ -1,3 +1,7 @@
 {
-  "name": "api"
+  "name": "api",
+  "scripts": {
+    "dev": "dotnet watch run",
+    "start": "dotnet watch run"
+  }
 }
