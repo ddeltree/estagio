@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "✨ estagio",
+      "path": ".",
+    },
+    {
+      "name": "🚀 web",
+      "path": "apps/web",
+    },
+    {
+      "name": "📦 @repo/eslint-config",
+      "path": "packages/eslint-config",
+    },
+    {
+      "name": "📦 @repo/typescript-config",
+      "path": "packages/typescript-config",
+    },
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto",
+      },
+    ],
+    "files.exclude": {
+      "apps": true,
+      "packages": true,
+    },
+  },
+}
