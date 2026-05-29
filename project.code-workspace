@@ -5,16 +5,8 @@
       "path": ".",
     },
     {
-      "name": "🚀 web",
-      "path": "apps/web",
-    },
-    {
-      "name": "📦 @repo/eslint-config",
-      "path": "packages/eslint-config",
-    },
-    {
-      "name": "📦 @repo/typescript-config",
-      "path": "packages/typescript-config",
+      "name": "🚀 api",
+      "path": "apps/api",
     },
   ],
   "settings": {
