@@ -1,0 +1,7 @@
+{
+  "name": "postgres",
+  "scripts": {
+    "db:up": "docker compose up -d my_database",
+    "db:down": "docker compose down"
+  }
+}
