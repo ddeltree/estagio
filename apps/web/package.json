@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "generate-types": "openapi-typescript http://localhost:5291/swagger/v1/swagger.json --output src/app/api/api.types.ts"
+    "generate:types": "pnpm dlx @hey-api/openapi-ts"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +29,7 @@
     "@angular/cli": "^19.2.26",
     "@angular/compiler-cli": "^19.2.0",
     "@eslint/js": "^9.39.1",
+    "@hey-api/openapi-ts": "^0.98.1",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/jasmine": "~5.1.0",
