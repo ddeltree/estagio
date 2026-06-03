@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "generate-types": "openapi-typescript http://localhost:5291/swagger/v1/swagger.json --output src/app/api/api.types.ts"
   },
   "private": true,
   "dependencies": {
@@ -23,13 +24,13 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@repo/eslint-config": "workspace:*",
     "@angular-devkit/build-angular": "^19.2.26",
     "@angular-eslint/builder": "21.0.1",
     "@angular/cli": "^19.2.26",
     "@angular/compiler-cli": "^19.2.0",
     "@eslint/js": "^9.39.1",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@types/jasmine": "~5.1.0",
     "angular-eslint": "21.0.1",
     "eslint": "^9.39.1",
@@ -39,6 +40,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "openapi-typescript": "^7.13.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "8.46.4"
   }

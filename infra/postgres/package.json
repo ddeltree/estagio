@@ -2,6 +2,8 @@
   "name": "postgres",
   "scripts": {
     "db:up": "docker compose up -d my_database",
-    "db:down": "docker compose down"
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f my_database",
+    "db:restart": "docker compose restart my_database"
   }
 }

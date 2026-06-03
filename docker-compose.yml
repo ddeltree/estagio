@@ -14,12 +14,9 @@ services:
       - '4200:80'
 
   my_database:
-    image: postgres:17
-
-    environment:
-      POSTGRES_DB: myapp
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+    build:
+      context: .
+      dockerfile: infra/postgres/Dockerfile
 
     ports:
       - '5432:5432'

@@ -2,6 +2,7 @@
   "name": "api",
   "scripts": {
     "dev": "dotnet watch run",
-    "start": "dotnet watch run"
+    "start": "dotnet watch run",
+    "db:migrate": "dotnet ef database update"
   }
 }
